@@ -7,7 +7,7 @@ let randomizerButton = document.querySelector('#randomizer-button');
 function changeColor(event) {
     let gradient = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
     body.style.background = gradient;
-    css.textContent = gradient;
+    css.innerHTML = `background: {<br>&nbsp;&nbsp;${gradient}<br>}`;
 }
 
 function generateRandomHexColor() {
